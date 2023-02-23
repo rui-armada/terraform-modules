@@ -1,6 +1,0 @@
-locals {
-
-  prd = ""
-  tst = ""
-
-}

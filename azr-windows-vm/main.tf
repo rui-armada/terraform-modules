@@ -5,13 +5,14 @@ resource "azurerm_network_interface" "privinterface" {
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = data.azurerm_subnet.subnetpriv.id
+    subnet_id                     = azurerm_subnet.subnet.id
     private_ip_address_allocation = "Dynamic"
   }
 }
 
 resource "azurerm_windows_virtual_machine" "windows-vm" {
   name                = "azvm-${var.system}-${var.env}"
+  computer_name       = var.system
   resource_group_name = azurerm_resource_group.vm.name
   location            = azurerm_resource_group.vm.location
   size                = var.size
