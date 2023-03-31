@@ -28,3 +28,8 @@ variable "repository" {
   type        = string
   description = "Repository."
 }
+
+variable "depends_on" {
+  type        = string
+  description = "depends_on."
+}
