@@ -28,9 +28,3 @@ variable "repository" {
   type        = string
   description = "Repository."
 }
-
-variable "depends_on" {
-  type        = any
-  description = "depends_on."
-  default = []
-}

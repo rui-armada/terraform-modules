@@ -6,6 +6,5 @@ resource "helm_release" "example" {
   create_namespace = true
   repository = var.repository
   values = [file(var.values)]
-  depends_on = [var.depends_on]
 
 }

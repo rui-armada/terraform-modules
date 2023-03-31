@@ -25,7 +25,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_depends_on"></a> [depends\_on](#input\_depends\_on) | depends\_on. | `any` | `[]` | no |
 | <a name="input_helmchart"></a> [helmchart](#input\_helmchart) | Helmchart. | `string` | n/a | yes |
 | <a name="input_kind_cluster_config_path"></a> [kind\_cluster\_config\_path](#input\_kind\_cluster\_config\_path) | The location where this cluster's kubeconfig will be saved to. | `string` | `"~/.kube/config"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name. | `string` | n/a | yes |
