@@ -29,6 +29,7 @@ No modules.
 | <a name="input_kind_cluster_config_path"></a> [kind\_cluster\_config\_path](#input\_kind\_cluster\_config\_path) | The location where this cluster's kubeconfig will be saved to. | `string` | `"~/.kube/config"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name. | `string` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | The namespace (it will be created if needed). | `string` | n/a | yes |
+| <a name="input_repository"></a> [repository](#input\_repository) | Repository. | `string` | n/a | yes |
 | <a name="input_values"></a> [values](#input\_values) | Path to values. | `string` | n/a | yes |
 
 ## Outputs
