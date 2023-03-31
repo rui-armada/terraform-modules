@@ -30,6 +30,7 @@ variable "repository" {
 }
 
 variable "depends_on" {
-  type        = string
+  type        = any
   description = "depends_on."
+  default = []
 }
