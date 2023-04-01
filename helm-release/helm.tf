@@ -3,7 +3,6 @@ resource "helm_release" "example" {
   name       = var.name
   repository = var.repository
   chart      = var.helmchart
-  version    = "4.0.6"
 
   namespace        = var.namespace
   create_namespace = true
