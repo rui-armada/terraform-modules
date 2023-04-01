@@ -1,10 +1,13 @@
 
-resource "helm_release" "example" {
+resource "helm_release" "ingress_nginx" {
   name       = var.name
+  repository = var.repository
   chart      = var.helmchart
+  version    = "4.0.6"
+
   namespace        = var.namespace
   create_namespace = true
-  repository = var.repository
+
   values = [file(var.values)]
 
 }
