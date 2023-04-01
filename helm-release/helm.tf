@@ -1,5 +1,5 @@
 
-resource "helm_release" "ingress_nginx" {
+resource "helm_release" "example" {
   name       = var.name
   repository = var.repository
   chart      = var.helmchart
