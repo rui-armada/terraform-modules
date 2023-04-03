@@ -3,14 +3,14 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_kind"></a> [kind](#requirement\_kind) | 0.0.9 |
+| <a name="requirement_kind"></a> [kind](#requirement\_kind) | 0.0.11 |
 | <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | 2.5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_kind"></a> [kind](#provider\_kind) | 0.0.9 |
+| <a name="provider_kind"></a> [kind](#provider\_kind) | 0.0.11 |
 
 ## Modules
 
@@ -20,7 +20,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [kind_cluster.default](https://registry.terraform.io/providers/kyma-incubator/kind/0.0.9/docs/resources/cluster) | resource |
+| [kind_cluster.default](https://registry.terraform.io/providers/kyma-incubator/kind/0.0.11/docs/resources/cluster) | resource |
 
 ## Inputs
 
