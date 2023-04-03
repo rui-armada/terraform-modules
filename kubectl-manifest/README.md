@@ -10,7 +10,6 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_http"></a> [http](#provider\_http) | n/a |
 | <a name="provider_kubectl"></a> [kubectl](#provider\_kubectl) | >= 1.10.0 |
 
 ## Modules
@@ -22,14 +21,12 @@ No modules.
 | Name | Type |
 |------|------|
 | [kubectl_manifest.mymanifest](https://registry.terraform.io/providers/gavinbunney/kubectl/latest/docs/resources/manifest) | resource |
-| [http_http.manifestfile](https://registry.terraform.io/providers/hashicorp/http/latest/docs/data-sources/http) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_file"></a> [file](#input\_file) | File. | `string` | n/a | yes |
-| <a name="input_url"></a> [url](#input\_url) | URL. | `string` | n/a | yes |
 
 ## Outputs
 

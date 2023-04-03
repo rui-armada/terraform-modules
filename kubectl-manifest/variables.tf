@@ -3,9 +3,3 @@ variable "file" {
   description = "File."
 
 }
-
-variable "url" {
-  type        = string
-  description = "URL."
-
-}
