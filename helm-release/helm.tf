@@ -1,7 +1,6 @@
 
 resource "helm_release" "example" {
   name       = var.name
-  repository = var.repository
   chart      = var.helmchart
 
   namespace        = var.namespace
@@ -9,22 +8,4 @@ resource "helm_release" "example" {
 
   values = [file(var.values)]
 
-}
-
-resource "null_resource" "wait_for_ingress_nginx" {
-  triggers = {
-    key = uuid()
-  }
-
-  provisioner "local-exec" {
-    command = <<EOF
-      printf "\nWaiting for the nginx ingress controller...\n"
-      kubectl wait --namespace ${helm_release.example.namespace} \
-        --for=condition=ready pod \
-        --selector=app.kubernetes.io/component=controller \
-        --timeout=90s
-    EOF
-  }
-
-  depends_on = [helm_release.example]
 }
