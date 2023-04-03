@@ -29,6 +29,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_file"></a> [file](#input\_file) | File. | `string` | n/a | yes |
+| <a name="input_url"></a> [url](#input\_url) | URL. | `string` | n/a | yes |
 
 ## Outputs
 
